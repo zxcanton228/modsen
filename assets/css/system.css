@@ -1,0 +1,10 @@
+:root {
+	--main: #030304;
+	--main-gradient: linear-gradient(90deg, #00CE2C 0.18%, #AEDF23 49.3%, #A3DC00 99.88%);
+	--main-color: #FFFFFF
+}
+
+::selection{
+	background: none;
+	color: #00CE2C;
+}

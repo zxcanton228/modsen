@@ -1,0 +1,24 @@
+
+
+.annoying-btn {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 10px solid rgba(72, 255, 115, 0.3);
+	background: radial-gradient(circle at center, #28ff48 5px, #28ff48 0px);
+	background-clip: padding-box;
+	box-shadow: 0 0 15px rgba(48, 255, 90, 0.4);
+	transform-origin: center;
+	animation: annoying .4s ease-in infinite alternate;
+}
+
+@keyframes annoying {
+	from {
+		transform: scale(1);
+	}
+
+	to {
+		transform: scale(1.2);
+	}
+}
