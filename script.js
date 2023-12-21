@@ -13,3 +13,4 @@ function render() {
 	let hour = String(now.getHours())
 	return hour + ":" + min
 }
+console.log("Git is working")

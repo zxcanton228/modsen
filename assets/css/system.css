@@ -1,3 +1,7 @@
+@import url('./pulse.css');
+@import url('./badge.css');
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 :root {
 	--main: #030304;
 	--main-gradient: linear-gradient(90deg, #00CE2C 0.18%, #AEDF23 49.3%, #A3DC00 99.88%);
@@ -7,4 +11,13 @@
 ::selection{
 	background: none;
 	color: #00CE2C;
+}
+::-webkit-scrollbar{
+	background: none;
+	width: 5px;
+}
+::-webkit-scrollbar-thumb{
+	background-color: gray;
+	border-radius: 5px;
+	width: 5px;
 }

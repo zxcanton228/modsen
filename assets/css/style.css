@@ -1,7 +1,6 @@
-@import url('./reset.css');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 @import url('./system.css');
-@import url('./pulse.css');
+
 
 body{
 	background-color: var(--main) !important;
@@ -82,3 +81,14 @@ header{
 	margin: 0;
 	letter-spacing: 0.8px;
 }
+/* CONTENT */
+.content{
+	padding: 56px 116px 0;
+	display: grid;
+	row-gap: 86px;
+}
+
+/* STOCKS */
+
+
+

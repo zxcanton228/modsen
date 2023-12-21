@@ -1,0 +1,26 @@
+.badges{
+	display: grid;
+	/* grid-template-columns: repeat(auto-fill, 1fr); */
+	justify-content: space-between;
+	gap: 56px 30px;
+	width: 100%;
+}
+.badge{
+	height: 153px;
+	width: min(45%, 100%);
+	border-radius: 8px;
+	border: 1px solid #474747;
+
+	background: #202025;
+}
+.stocks__hr{
+	/* width: 620px; */
+
+}
+
+.stocks__title{
+	width: 100%;
+	justify-content: center;
+	display: grid;
+	/* text-align: center; */
+}
