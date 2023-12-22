@@ -5,8 +5,17 @@
 :root {
 	--main: #030304;
 	--main-gradient: linear-gradient(90deg, #00CE2C 0.18%, #AEDF23 49.3%, #A3DC00 99.88%);
-	--main-color: #FFFFFF
+	--landing-back: linear-gradient(-158deg, #121212 -5.23%, rgba(130, 253, 113, 0.1), rgba(36, 121, 64, 0.00) 102%);;
+	--main-color: #FFFFFF;
+	--badge-back: #202025;
 }
+.dark{
+	--main: white;
+	--main-color: #030304;
+	--badge-back: #ededed;
+	--landing-back: #ededed;
+}
+
 
 ::selection{
 	background: none;
@@ -18,6 +27,5 @@
 }
 ::-webkit-scrollbar-thumb{
 	background-color: gray;
-	border-radius: 5px;
 	width: 5px;
 }

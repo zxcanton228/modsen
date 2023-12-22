@@ -1,17 +1,51 @@
 .badges{
 	display: grid;
-	/* grid-template-columns: repeat(auto-fill, 1fr); */
-	justify-content: space-between;
+	grid-template-columns: repeat(auto-fill, min(721px,100%));
+	justify-content: space-around;
 	gap: 56px 30px;
 	width: 100%;
 }
-.badge{
+
+.badger{
 	height: 153px;
-	width: min(45%, 100%);
+	/* width: ;  */
 	border-radius: 8px;
 	border: 1px solid #474747;
 
-	background: #202025;
+	background: var(--badge-back);
+	color: var(--main-color);
+
+	display: flex!important;
+	align-items: center;
+	padding-left: 30px;
+	column-gap: 30px;
+
+	cursor: pointer;
+
+	transition: .8s all;
+}
+.badger:hover{
+	transform: scale(0.98);
+}
+.badge__curency{
+	width: 80px;
+	height: 80px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 8px;
+	background: #2C4D54;
+}
+.badge__article{
+	font-size: 30px;
+	height: 99px;
+	font-weight: 400;
+}
+.badge__article>p{
+	color: var(--main-color);
+	
 }
 .stocks__hr{
 	/* width: 620px; */
@@ -20,7 +54,40 @@
 
 .stocks__title{
 	width: 100%;
-	justify-content: center;
+	/* justify-content: center; */
+	row-gap: 24px;
 	display: grid;
-	/* text-align: center; */
+	text-align: center;
+	margin-bottom: 50px;
+
+	transition: .7s all;
 }
+
+
+.dollar{
+	background: #2A4628;
+}
+.rubl{
+	background: #5A4B2C;
+}
+.cdollar{
+	background: #452534;
+}
+.gray{
+	background: #494F57;
+}
+.adollar{
+	background: #142E67;
+}
+.euro{
+	background: #1D324B;
+}
+.bitcoin{
+	background: #3D2E28;
+}
+.libra{
+	background: #5B2C2B;
+}
+
+
+

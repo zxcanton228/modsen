@@ -13,4 +13,17 @@ function render() {
 	let hour = String(now.getHours())
 	return hour + ":" + min
 }
-console.log("Git is working")
+
+const btn = document.querySelector(".theme")
+
+btn.addEventListener("click", () => {
+	if (localStorage.getItem("mode") === "dark") {
+		document.body.classList.add("dark")
+
+		localStorage.setItem("mode", "light")
+	} else {
+		document.body.classList.remove("dark")
+
+		localStorage.setItem("mode", "dark")
+	}
+})
