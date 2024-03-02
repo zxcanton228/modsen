@@ -32,19 +32,25 @@ header{
 	justify-content: space-between;
 	gap: 0px 112px;
 }
-.header__nav>a{
-	height: 100%;
-	display: flex;
-	align-items: center;
 
-	color: var(--main-color);
-	font-weight: 300;
 
-	transition: color .6s;
+.header__nav>a::after {	
+	content: "";
+	width: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -6px;
+	height: 2px;
+	background-color: green;
+	transition: width 0.25s ease-in-out;
 }
-.header__nav>a:hover {
-	color: #cbc9c9;
+
+.header__nav>a:hover::after {
+	width: 100%;
 }
+	
+
 .h2{
 
 }
