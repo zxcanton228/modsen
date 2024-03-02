@@ -34,25 +34,32 @@ header{
 }
 
 
-.header__nav>a::after {	
+.link {
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+	position: relative;
+	text-decoration: none;
+
+	color: var(--main-color);
+	font-weight: 300;
+}
+
+.link::after {
 	content: "";
 	width: 0;
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: -6px;
+	bottom: 2px;
 	height: 2px;
-	background-color: green;
-	transition: width 0.25s ease-in-out;
+	background-color: greenyellow;
+	transition: width 0.3s ease-in-out;
 }
 
-.header__nav>a:hover::after {
+.link:hover::after {
 	width: 100%;
-}
-	
-
-.h2{
-
 }
 .theme{
 	border-radius: 100px;
